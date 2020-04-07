@@ -1,0 +1,3 @@
+module codewarsDeleteMultipleOccurrences {
+	requires junit;
+}
