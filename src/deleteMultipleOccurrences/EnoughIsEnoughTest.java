@@ -7,8 +7,8 @@ import org.junit.Test;
 public class EnoughIsEnoughTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void deleteNth_singleElementArray_returnOriginalArray() {
+		assertArrayEquals(new int [] {1}, EnoughIsEnough.deleteNth(new int [] {1}, 1));
 	}
 
 }
