@@ -6,6 +6,9 @@ import java.util.LinkedList;
 public class EnoughIsEnough {
 	
 	static int[] deleteNth(int[] elements, int maxOccurrences) {
+		if(maxOccurrences == 0) {
+			return new int[0];
+		}
 		HashMap<Integer, Integer> elementCount = new HashMap<Integer, Integer>();
 		LinkedList<Integer> fifoElements = new LinkedList<Integer>();
 		for(int i = 0; i < elements.length; i++) {

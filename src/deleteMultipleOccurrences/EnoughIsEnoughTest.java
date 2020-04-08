@@ -42,4 +42,8 @@ public class EnoughIsEnoughTest {
 		assertArrayEquals(new int [] {20,37,21}, EnoughIsEnough.deleteNth(new int[] {20,37,20,21}, 1));
 	}
 	
+	@Test
+	public void deleteNth_0OccurrencesEdgeCase_returnEmptyArray() {
+		assertArrayEquals(new int [0], EnoughIsEnough.deleteNth(new int[] {1,1,3,3,7,2,2,2,2}, 0));
+	}	
 }
