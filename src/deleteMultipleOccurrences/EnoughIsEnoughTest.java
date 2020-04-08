@@ -36,4 +36,10 @@ public class EnoughIsEnoughTest {
 		assertArrayEquals(new int [] {1,1,1,1}, EnoughIsEnough.deleteNth(new int [] {1,1,1,1,1,1}, 4));
 	}
 	
+	@Test
+	public void deleteNth_acceptanceCriteriaExample_returnCorrectArray() {
+		assertArrayEquals(new int [] {1,1,3,3,7,2,2,2}, EnoughIsEnough.deleteNth(new int[] {1,1,3,3,7,2,2,2,2}, 3));
+		assertArrayEquals(new int [] {20,37,21}, EnoughIsEnough.deleteNth(new int[] {20,37,20,21}, 1));
+	}
+	
 }

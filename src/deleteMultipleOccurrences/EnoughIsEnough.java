@@ -2,7 +2,6 @@ package deleteMultipleOccurrences;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
 public class EnoughIsEnough {
 	
@@ -13,9 +12,7 @@ public class EnoughIsEnough {
 			if(elementCount.containsKey((int)elements[i])) {
 				if(elementCount.get(elements[i]) < maxOccurrences) {
 					elementCount.put(elements[i], elementCount.get(elements[i])+1);
-					fifoElements.add(elements[i]);
-//					System.out.println("HENLO");
-				}
+					fifoElements.add(elements[i]);				}
 			} else {
 				if(!elementCount.containsKey(elements[i])) {
 					elementCount.put(elements[i], 1);
@@ -23,10 +20,6 @@ public class EnoughIsEnough {
 				}
 			}
 		}
-//		for(Map.Entry<Integer, Integer> me : elementCount.entrySet()) {
-//			System.out.println("Key: " + me.getKey());
-//			System.out.println("Value: " + me.getValue());
-//		}
 		int[] answer = new int[fifoElements.size()];
 		int index = 0;
 		while(!fifoElements.isEmpty()) {
